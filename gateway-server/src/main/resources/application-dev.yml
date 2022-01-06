@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+#eureka基本信息配置
+#eureka连接信息
+eureka:
+  instance:
+    hostname: summer.com
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://zengling:zengling@${eureka.instance.hostname}:8761/eureka/

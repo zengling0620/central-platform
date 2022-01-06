@@ -1,0 +1,5 @@
+include 'eureka-server'
+include 'config-server'
+include 'gateway-server'
+include 'central-common'
+

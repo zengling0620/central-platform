@@ -1,0 +1,9 @@
+archivesBaseName = 'eureka-server'
+jar.enabled = true
+bootJar.enabled = true
+
+dependencies {
+    implementation project(':central-common')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    implementation('org.springframework.boot:spring-boot-starter-security')
+}

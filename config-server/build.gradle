@@ -1,0 +1,11 @@
+archivesBaseName = 'config-server'
+jar.enabled = true
+bootJar.enabled = true
+
+apply plugin: 'java'
+
+dependencies {
+    implementation project(':central-common')
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
+}
